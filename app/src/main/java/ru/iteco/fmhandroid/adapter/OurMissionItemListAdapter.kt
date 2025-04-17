@@ -64,10 +64,10 @@ class OurMissionItemListAdapter(
                 ourMissionItemDescriptionTextView.text = ourMissionItem.description
 
                 if (ourMissionItem.isOpen) {
-                    ourMissionItemDescriptionTextView.visibility = View.VISIBLE
+                    ourMissionItemDescriptionTextView.visibility = View.INVISIBLE
                     ourMissionItemOpenCardImageButton.setImageResource(R.drawable.expand_less_24)
                 } else {
-                    ourMissionItemDescriptionTextView.visibility = View.GONE
+                    ourMissionItemDescriptionTextView.visibility = View.INVISIBLE
                     ourMissionItemOpenCardImageButton.setImageResource(R.drawable.expand_more_24)
                 }
 

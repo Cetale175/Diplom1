@@ -48,10 +48,10 @@ class NewsListAdapter(private val onNewsItemClickListener: OnNewsItemClickListen
                 setCategoryIcon(news)
 
                 if (news.isOpen) {
-                    newsItemGroup.visibility = View.VISIBLE
+                    newsItemGroup.visibility = View.INVISIBLE
                     viewNewsItemImageView.setImageResource(R.drawable.expand_less_24)
                 } else {
-                    newsItemGroup.visibility = View.GONE
+                    newsItemGroup.visibility = View.INVISIBLE
                     viewNewsItemImageView.setImageResource(R.drawable.expand_more_24)
                 }
 

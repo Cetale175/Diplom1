@@ -100,7 +100,7 @@ public class EditorialSteps {
 
     public void checkSearchResultIsDisplayed(String text) {
         Allure.step("Проверить элемент '" + text + "' на видимость");
-        ViewInteraction titleView = onView(allOf(withText(text), withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)));
+        ViewInteraction titleView = onView(allOf(withText(text), withEffectiveVisibility(ViewMatchers.Visibility.INVISIBLE)));
         titleView.check(matches(isDisplayed()));
         titleView.check(matches(withText(endsWith(text))));
     }

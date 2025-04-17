@@ -106,7 +106,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
             expandMaterialButton.setOnClickListener {
                 when (allNewsTextView.visibility) {
-                    View.GONE -> {
+                    View.INVISIBLE -> {
                         allNewsTextView.visibility = View.INVISIBLE
                         allNewsCardsBlockConstraintLayout.visibility = View.INVISIBLE
                         expandMaterialButton.setIconResource(R.drawable.expand_less_24)

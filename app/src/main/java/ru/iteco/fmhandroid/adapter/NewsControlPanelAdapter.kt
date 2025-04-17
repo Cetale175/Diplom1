@@ -59,10 +59,10 @@ class NewsControlPanelListAdapter(
                 setCategoryIcon(newsItem)
 
                 if (newsItem.newsItem.isOpen) {
-                    newsItemDescriptionTextView.visibility = View.VISIBLE
+                    newsItemDescriptionTextView.visibility = View.INVISIBLE
                     viewNewsItemImageView.setImageResource(R.drawable.expand_less_24)
                 } else {
-                    newsItemDescriptionTextView.visibility = View.GONE
+                    newsItemDescriptionTextView.visibility = View.INVISIBLE
                     viewNewsItemImageView.setImageResource(R.drawable.expand_more_24)
                 }
 
